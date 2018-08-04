@@ -5,6 +5,10 @@ public final class Cafe {
     private int beansInStock = 0;
     private int milkInStock = 0;
 
+    public Coffee brew(CoffeeType coffeeType){
+        return brew(coffeeType, 1);
+    }
+
     public Coffee brew(CoffeeType coffeeType, int quantity){
         requirePositive(quantity);
 
